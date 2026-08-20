@@ -6,11 +6,11 @@ interface CookiePreferences {
   marketing: boolean;
 }
 
-export const CookieBanner: React.FC = () => {
+const CookieBanner: React.FC = () => {
   const [showBanner, setShowBanner] = useState(false);
   const [showDetails, setShowDetails] = useState(false);
   const [preferences, setPreferences] = useState<CookiePreferences>({
-    necessary: true, // Always true — cannot be disabled
+    necessary: true,
     analytics: false,
     marketing: false,
   });
@@ -23,8 +23,9 @@ export const CookieBanner: React.FC = () => {
   }, []);
 
   const handleAcceptAll = () => {
-    setPreferences({ necessary: true, analytics: true, marketing: true });
-    saveConsent({ necessary: true, analytics: true, marketing: true });
+    const prefs = { necessary: true, analytics: true, marketing: true };
+    setPreferences(prefs);
+    saveConsent(prefs);
     setShowBanner(false);
   };
 
@@ -34,8 +35,9 @@ export const CookieBanner: React.FC = () => {
   };
 
   const handleRejectAll = () => {
-    setPreferences({ necessary: true, analytics: false, marketing: false });
-    saveConsent({ necessary: true, analytics: false, marketing: false });
+    const prefs = { necessary: true, analytics: false, marketing: false };
+    setPreferences(prefs);
+    saveConsent(prefs);
     setShowBanner(false);
   };
 
@@ -44,10 +46,6 @@ export const CookieBanner: React.FC = () => {
       ...prefs,
       timestamp: new Date().toISOString(),
     }));
-    // Apply preferences (e.g., enable/disable analytics)
-    if (prefs.analytics) {
-      // Initialize analytics
-    }
   };
 
   const togglePreference = (key: keyof CookiePreferences) => {
@@ -62,11 +60,10 @@ export const CookieBanner: React.FC = () => {
       <div style={styles.banner}>
         <h3 style={styles.title}>Cookie-Einstellungen</h3>
         <p style={styles.description}>
-          Wir verwenden Cookies, um Ihnen die bestmögliche Erfahrung auf unserer 
-          Website zu bieten. Notwendige Cookies sind für den Betrieb erforderlich. 
-          Sie können Ihre Zustimmung jederzeit in den Einstellungen widerrufen.
-          <button 
-            onClick={() => setShowDetails(!showDetails)} 
+          Wir verwenden Cookies, um Ihnen die bestmögliche Erfahrung auf unserer
+          Website zu bieten. Notwendige Cookies sind für den Betrieb erforderlich.
+          <button
+            onClick={() => setShowDetails(!showDetails)}
             style={styles.linkButton}
           >
             {showDetails ? 'Weniger anzeigen' : 'Details anzeigen'}
@@ -76,26 +73,26 @@ export const CookieBanner: React.FC = () => {
         {showDetails && (
           <div style={styles.options}>
             <label style={styles.option}>
-              <input 
-                type="checkbox" 
-                checked={preferences.necessary} 
-                disabled 
+              <input
+                type="checkbox"
+                checked={preferences.necessary}
+                disabled
               />
               <span>Notwendig (immer aktiv)</span>
             </label>
             <label style={styles.option}>
-              <input 
-                type="checkbox" 
-                checked={preferences.analytics} 
-                onChange={() => togglePreference('analytics')} 
+              <input
+                type="checkbox"
+                checked={preferences.analytics}
+                onChange={() => togglePreference('analytics')}
               />
               <span>Analyse & Statistik</span>
             </label>
             <label style={styles.option}>
-              <input 
-                type="checkbox" 
-                checked={preferences.marketing} 
-                onChange={() => togglePreference('marketing')} 
+              <input
+                type="checkbox"
+                checked={preferences.marketing}
+                onChange={() => togglePreference('marketing')}
               />
               <span>Marketing</span>
             </label>
@@ -223,3 +220,6 @@ const styles: { [key: string]: React.CSSProperties } = {
     paddingTop: '16px',
   },
 };
+
+// ✅ THIS IS THE CRITICAL LINE THAT WAS MISSING:
+export default CookieBanner;
