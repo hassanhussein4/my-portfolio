@@ -6,54 +6,146 @@ import Layout from '../components/Layout.astro';
   <!-- Hero Section -->
   <section style="
     padding: 4rem 2rem;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     font-family: system-ui, -apple-system, sans-serif;
   ">
-    <h1 style="font-size: 3rem; font-weight: 700; margin-bottom: 0.5rem;">
-      Hi, I'm Hassan Hussein
-    </h1>
-    <p style="font-size: 1.5rem; color: #2563eb; font-weight: 500;">
-      System Engineer &amp; Network Architect
-    </p>
-    <p style="font-size: 1.1rem; line-height: 1.6; max-width: 600px; color: #4a4a4a;">
-      Building reliable, scalable infrastructure and embedded systems.
-    </p>
+    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+      <h1 style="
+        font-size: 3.5rem; 
+        font-weight: 700; 
+        margin-bottom: 0.25rem;
+        background: linear-gradient(135deg, #1e3a8a, #2563eb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      ">
+        Hassan Hussein
+      </h1>
+      <p style="
+        font-size: 1.8rem; 
+        color: #1e3a8a; 
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+      ">
+        Energy Engineer | Strategy & Innovation
+      </p>
+      <p style="
+        font-size: 1.1rem; 
+        line-height: 1.7; 
+        max-width: 700px; 
+        color: #4a4a4a;
+      ">
+        Combining a Master's in Power Engineering (TUM) with hands-on R&D experience at E.ON, 
+        I specialise in renewable energy integration, grid technologies, and Engineering Management. 
+        Passionate about driving the energy transition through innovation and operational excellence.
+      </p>
+    </div>
+
+    <!-- Contact Badges -->
+    <div style="
+      display: flex; 
+      flex-wrap: wrap; 
+      gap: 1rem; 
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e5e7eb;
+    ">
+      <span style="background: #e5e7eb; padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.9rem;">
+        📧 hassan.hussein2424@gmail.com
+      </span>
+      <span style="background: #e5e7eb; padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.9rem;">
+        📍 Munich, Germany
+      </span>
+      <span style="background: #e5e7eb; padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.9rem;">
+        🌍 Open to Relocate
+      </span>
+      <span style="background: #e5e7eb; padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.9rem;">
+        🇪🇬 🇹🇷 English, Arabic, Turkish, German (B1)
+      </span>
+    </div>
   </section>
 
-  <!-- Work Experience -->
-  <section id="work" style="
+  <!-- Experience Section -->
+  <section id="experience" style="
     padding: 2rem;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
   ">
-    <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 1.5rem;">Experience</h2>
-    
-    <article style="margin-bottom: 2rem;">
-      <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 0.25rem;">
-        Senior Network Engineer
-      </h3>
-      <p style="font-weight: 500; color: #2563eb; margin-bottom: 0.5rem;">
-        [Your Company] — 2022 – Present
-      </p>
-      <ul style="list-style: disc; padding-left: 1.5rem; line-height: 1.6;">
-        <li>Designed and implemented scalable network infrastructure.</li>
-        <li>Managed cloud infrastructure (AWS, Cloudflare).</li>
-        <li>Reduced latency by 30% through network optimization.</li>
+    <h2 style="
+      font-size: 2rem; 
+      font-weight: 700; 
+      margin-bottom: 1.5rem;
+      color: #1e3a8a;
+    ">
+      💼 Professional Experience
+    </h2>
+
+    <!-- E.ON -->
+    <article style="margin-bottom: 2rem; padding: 1.5rem; background: #f8fafc; border-radius: 12px; border-left: 4px solid #2563eb;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+        <div>
+          <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 0.25rem;">
+            Working Student - R&D Management
+          </h3>
+          <p style="font-weight: 500; color: #2563eb; margin-bottom: 0.5rem;">
+            E.ON Group Innovation - Future Lab
+          </p>
+        </div>
+        <span style="background: #dbeafe; padding: 0.25rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 500;">
+          09/2023 – 07/2025
+        </span>
+      </div>
+      <ul style="list-style: disc; padding-left: 1.5rem; line-height: 1.8; color: #4a4a4a;">
+        <li>Conducted deep-tech market research on grid digitalisation technologies and managed R&D projects.</li>
+        <li>Developed value proposition and monetization strategy for a battery health project.</li>
+        <li>Redesigned the end-to-end project pipeline, accelerating cycles by up to 3x.</li>
+        <li>Prepared reports and presentations for senior management.</li>
       </ul>
     </article>
 
-    <article style="margin-bottom: 2rem;">
-      <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 0.25rem;">
-        System Architect
-      </h3>
-      <p style="font-weight: 500; color: #2563eb; margin-bottom: 0.5rem;">
-        [Your Company] — 2019 – 2022
-      </p>
-      <ul style="list-style: disc; padding-left: 1.5rem; line-height: 1.6;">
-        <li>Architected embedded systems for industrial automation.</li>
-        <li>Led a team of 5 engineers on firmware development.</li>
-        <li>Improved system reliability by 25%.</li>
+    <!-- Sungrow -->
+    <article style="margin-bottom: 2rem; padding: 1.5rem; background: #f8fafc; border-radius: 12px; border-left: 4px solid #2563eb;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+        <div>
+          <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 0.25rem;">
+            Intern - Technical Training
+          </h3>
+          <p style="font-weight: 500; color: #2563eb; margin-bottom: 0.5rem;">
+            Sungrow Europe
+          </p>
+        </div>
+        <span style="background: #dbeafe; padding: 0.25rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 500;">
+          07/2026 – 01/2027
+        </span>
+      </div>
+      <ul style="list-style: disc; padding-left: 1.5rem; line-height: 1.8; color: #4a4a4a;">
+        <li>Supported service technical training for utility-scale ESS, PV, C&I, and Residential products.</li>
+        <li>Maintained European Knowledge Base with HQ materials.</li>
+        <li>Developed training materials and supported Competency Level Certification System.</li>
+        <li>Maintained Service Competency Center (SCC) in Munich.</li>
+      </ul>
+    </article>
+
+    <!-- Volunteer - Organizational Development -->
+    <article style="margin-bottom: 2rem; padding: 1.5rem; background: #f8fafc; border-radius: 12px; border-left: 4px solid #2563eb;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+        <div>
+          <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 0.25rem;">
+            Volunteer - Organizational Development & HR Team Lead
+          </h3>
+          <p style="font-weight: 500; color: #2563eb; margin-bottom: 0.5rem;">
+            Deutsch-Arabischer Raum
+          </p>
+        </div>
+        <span style="background: #dbeafe; padding: 0.25rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 500;">
+          02/2026 – Present
+        </span>
+      </div>
+      <ul style="list-style: disc; padding-left: 1.5rem; line-height: 1.8; color: #4a4a4a;">
+        <li>Lead HR operations for a 1,200+ member organization.</li>
+        <li>Planned and executed large-scale events (400+ attendees) and team-building activities.</li>
+        <li>Improved volunteer onboarding and training processes.</li>
+        <li>Using Salesforce (CRM) for data management and operational tracking.</li>
       </ul>
     </article>
   </section>
@@ -61,52 +153,153 @@ import Layout from '../components/Layout.astro';
   <!-- Skills Section -->
   <section id="skills" style="
     padding: 2rem;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
   ">
-    <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 1.5rem;">Skills</h2>
-    <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-      <span style="background: #e5e7eb; padding: 0.5rem 1.5rem; border-radius: 20px;">Network Design & Security</span>
-      <span style="background: #e5e7eb; padding: 0.5rem 1.5rem; border-radius: 20px;">Cloud Infrastructure (AWS, Cloudflare)</span>
-      <span style="background: #e5e7eb; padding: 0.5rem 1.5rem; border-radius: 20px;">Embedded Systems (C/C++, RTOS)</span>
-      <span style="background: #e5e7eb; padding: 0.5rem 1.5rem; border-radius: 20px;">Python & Automation</span>
-      <span style="background: #e5e7eb; padding: 0.5rem 1.5rem; border-radius: 20px;">Linux System Administration</span>
-      <span style="background: #e5e7eb; padding: 0.5rem 1.5rem; border-radius: 20px;">Network Routing & Switching</span>
+    <h2 style="
+      font-size: 2rem; 
+      font-weight: 700; 
+      margin-bottom: 1.5rem;
+      color: #1e3a8a;
+    ">
+      🛠️ Technical Skills & Tools
+    </h2>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">Programming & Data Analysis</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+        <span style="background: #dbeafe; padding: 0.4rem 1rem; border-radius: 20px;">Python (pandas, numpy, scikit-learn)</span>
+        <span style="background: #dbeafe; padding: 0.4rem 1rem; border-radius: 20px;">SQL</span>
+        <span style="background: #dbeafe; padding: 0.4rem 1rem; border-radius: 20px;">MATLAB</span>
+        <span style="background: #dbeafe; padding: 0.4rem 1rem; border-radius: 20px;">Power BI</span>
+        <span style="background: #dbeafe; padding: 0.4rem 1rem; border-radius: 20px;">LCA (brightway)</span>
+      </div>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">Energy System Modelling</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+        <span style="background: #dbeafe; padding: 0.4rem 1rem; border-radius: 20px;">PyPSA</span>
+        <span style="background: #dbeafe; padding: 0.4rem 1rem; border-radius: 20px;">TESPy</span>
+        <span style="background: #dbeafe; padding: 0.4rem 1rem; border-radius: 20px;">PVsyst</span>
+        <span style="background: #dbeafe; padding: 0.4rem 1rem; border-radius: 20px;">Ansys Fluent (CFD)</span>
+        <span style="background: #dbeafe; padding: 0.4rem 1rem; border-radius: 20px;">SolidWorks</span>
+      </div>
+    </div>
+
+    <div>
+      <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">Project Management & Tools</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+        <span style="background: #dbeafe; padding: 0.4rem 1rem; border-radius: 20px;">Salesforce (CRM)</span>
+        <span style="background: #dbeafe; padding: 0.4rem 1rem; border-radius: 20px;">Notion</span>
+        <span style="background: #dbeafe; padding: 0.4rem 1rem; border-radius: 20px;">Slack</span>
+        <span style="background: #dbeafe; padding: 0.4rem 1rem; border-radius: 20px;">Microsoft Office Suite</span>
+        <span style="background: #dbeafe; padding: 0.4rem 1rem; border-radius: 20px;">Microsoft Project</span>
+      </div>
     </div>
   </section>
 
-  <!-- FAQ Section - Essential for AI Engines -->
-  <section id="faq" style="
+  <!-- Education Section -->
+  <section id="education" style="
     padding: 2rem;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
   ">
-    <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 1.5rem;">FAQ</h2>
-    
-    <article style="margin-bottom: 1.5rem;">
-      <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.25rem;">
-        What industries have you worked in?
-      </h3>
-      <p style="line-height: 1.6; color: #4a4a4a;">
-        I've worked in automotive, industrial automation, and consumer electronics.
+    <h2 style="
+      font-size: 2rem; 
+      font-weight: 700; 
+      margin-bottom: 1.5rem;
+      color: #1e3a8a;
+    ">
+      🎓 Education
+    </h2>
+
+    <article style="margin-bottom: 1.5rem; padding: 1.5rem; background: #f8fafc; border-radius: 12px;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+        <div>
+          <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.25rem;">
+            M.Sc. Power Engineering
+          </h3>
+          <p style="font-weight: 500; color: #2563eb;">Technical University of Munich (TUM)</p>
+        </div>
+        <span style="background: #dbeafe; padding: 0.25rem 1rem; border-radius: 20px; font-size: 0.85rem;">
+          10/2022 – 09/2025
+        </span>
+      </div>
+      <p style="margin-top: 0.75rem; color: #4a4a4a; line-height: 1.6;">
+        <strong>Master's Thesis:</strong> Explored how thermal inertia in district heating networks can serve as virtual energy storage 
+        to enhance system flexibility and integrate renewables. Using dynamic simulations with real German market data, 
+        showed significant reduction in operating costs and CO₂ emissions.
       </p>
-    </article>
-    
-    <article style="margin-bottom: 1.5rem;">
-      <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.25rem;">
-        What is your core tech stack?
-      </h3>
-      <p style="line-height: 1.6; color: #4a4a4a;">
-        C/C++, Python, Rust, RTOS, ARM Cortex-M microcontrollers, and cloud infrastructure (AWS, Cloudflare).
+      <p style="color: #4a4a4a; line-height: 1.6; margin-top: 0.5rem;">
+        <strong>Specialization:</strong> Renewable & Thermal Energy, Energy Storage & Economics, High Voltage Technology, Sustainable Mobility.
       </p>
     </article>
 
-    <article style="margin-bottom: 1.5rem;">
-      <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.25rem;">
+    <article style="margin-bottom: 1.5rem; padding: 1.5rem; background: #f8fafc; border-radius: 12px;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+        <div>
+          <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.25rem;">
+            B.Sc. Energy Systems Engineering
+          </h3>
+          <p style="font-weight: 500; color: #2563eb;">Istanbul Bilgi University</p>
+        </div>
+        <span style="background: #dbeafe; padding: 0.25rem 1rem; border-radius: 20px; font-size: 0.85rem;">
+          10/2018 – 08/2022
+        </span>
+      </div>
+      <p style="margin-top: 0.75rem; color: #4a4a4a; line-height: 1.6;">
+        <strong>Bachelor's Thesis (Best Senior Project Award):</strong> Investigated recovering waste heat from domestic shower 
+        wastewater using heat exchangers, achieving high heat recovery efficiency and significant economic and emission savings.
+      </p>
+      <p style="color: #4a4a4a; line-height: 1.6; margin-top: 0.5rem;">
+        <strong>Minor:</strong> Business Administration
+      </p>
+    </article>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" style="
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  ">
+    <h2 style="
+      font-size: 2rem; 
+      font-weight: 700; 
+      margin-bottom: 1.5rem;
+      color: #1e3a8a;
+    ">
+      ❓ Frequently Asked Questions
+    </h2>
+
+    <article style="margin-bottom: 1.5rem; padding: 1rem 1.5rem; background: #f8fafc; border-radius: 8px;">
+      <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.25rem;">
+        What industries have you worked in?
+      </h3>
+      <p style="line-height: 1.6; color: #4a4a4a;">
+        I've worked across renewable energy, grid digitalisation, R&D management, and industrial automation. 
+        My experience spans energy utilities (E.ON), renewable energy OEMs (Sungrow), and academic research (TUM, DTU).
+      </p>
+    </article>
+
+    <article style="margin-bottom: 1.5rem; padding: 1rem 1.5rem; background: #f8fafc; border-radius: 8px;">
+      <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.25rem;">
+        What is your core technical expertise?
+      </h3>
+      <p style="line-height: 1.6; color: #4a4a4a;">
+        Energy system modelling (PyPSA, TESPy), data analysis (Python, SQL), R&D project management, 
+        deep-tech market research, techno-economic analysis, and process optimisation.
+      </p>
+    </article>
+
+    <article style="margin-bottom: 1.5rem; padding: 1rem 1.5rem; background: #f8fafc; border-radius: 8px;">
+      <h3 style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.25rem;">
         Are you available for freelance projects?
       </h3>
       <p style="line-height: 1.6; color: #4a4a4a;">
-        Yes! I'm open to freelance and consulting opportunities. Contact me at <a href="mailto:your@email.de" style="color: #2563eb; text-decoration: none;">your@email.de</a>.
+        Yes! I'm open to freelance, consulting, and research collaborations. 
+        Contact me at <a href="mailto:hassan.hussein2424@gmail.com" style="color: #2563eb; text-decoration: none;">hassan.hussein2424@gmail.com</a>.
       </p>
     </article>
   </section>
@@ -114,27 +307,48 @@ import Layout from '../components/Layout.astro';
   <!-- Contact Section -->
   <section id="contact" style="
     padding: 2rem;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     text-align: center;
     border-top: 1px solid #e5e7eb;
     margin-top: 2rem;
+    padding-top: 3rem;
   ">
-    <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 1rem;">Let's Connect</h2>
-    <p style="font-size: 1.1rem; color: #4a4a4a; margin-bottom: 1rem;">
-      Have a project in mind? Let's talk!
-    </p>
-    <a href="mailto:your@email.de" style="
-      display: inline-block;
-      background: #2563eb;
-      color: white;
-      padding: 0.75rem 2rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: background 0.2s;
+    <h2 style="
+      font-size: 2rem; 
+      font-weight: 700; 
+      margin-bottom: 1rem;
+      color: #1e3a8a;
     ">
-      Get in Touch
-    </a>
+      📬 Let's Connect
+    </h2>
+    <p style="font-size: 1.1rem; color: #4a4a4a; margin-bottom: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+      Have a project in mind or want to collaborate on energy transition initiatives? 
+      Let's talk! I'm always open to new opportunities.
+    </p>
+    <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+      <a href="mailto:hassan.hussein2424@gmail.com" style="
+        display: inline-block;
+        background: #2563eb;
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 500;
+      ">
+        📧 Email Me
+      </a>
+      <a href="https://linkedin.com/in/hassanhussein" style="
+        display: inline-block;
+        background: #0a66c2;
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 500;
+      ">
+        🔗 LinkedIn
+      </a>
+    </div>
   </section>
 </Layout>
