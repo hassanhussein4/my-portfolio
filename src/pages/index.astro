@@ -4,467 +4,61 @@ import Layout from '../components/Layout.astro';
 
 <Layout>
   <div style="
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    text-align: center;
+    padding: 2rem;
     font-family: system-ui, -apple-system, sans-serif;
-    color: #1a1a1a;
   ">
-    <!-- Header / Navigation -->
-    <div style="
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid #e5e7eb;
-      margin-bottom: 3rem;
+    <h1 style="
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     ">
-      <span style="font-size: 1.2rem; font-weight: 600; letter-spacing: 0.05em;">
-        HASSAN HUSSEIN
-      </span>
-      <nav style="display: flex; gap: 2rem; font-size: 0.9rem;">
-        <a href="#experience" style="text-decoration: none; color: #1a1a1a;">Experience</a>
-        <a href="#education" style="text-decoration: none; color: #1a1a1a;">Education</a>
-        <a href="#skills" style="text-decoration: none; color: #1a1a1a;">Skills</a>
-        <a href="#contact" style="text-decoration: none; color: #1a1a1a;">Contact</a>
-      </nav>
-    </div>
-
-    <!-- Hero Section -->
-    <div style="
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      margin-bottom: 4rem;
+      🚧 Coming Soon
+    </h1>
+    <p style="
+      font-size: 1.5rem;
+      color: #4a4a4a;
+      margin-bottom: 1rem;
     ">
-      <div>
-        <div style="font-size: 0.85rem; color: #6b7280; letter-spacing: 0.1em; margin-bottom: 0.5rem;">
-          01 //
-        </div>
-        <h1 style="
-          font-size: 3rem;
-          font-weight: 700;
-          margin: 0 0 0.25rem 0;
-          line-height: 1.1;
-        ">
-          ENERGY<br>ENGINEER
-        </h1>
-        <p style="
-          font-size: 1.2rem;
-          color: #6b7280;
-          margin: 0.5rem 0 1rem 0;
-          font-weight: 300;
-        ">
-          Strategy & Innovation | R&D Management
-        </p>
-        <p style="
-          font-size: 1rem;
-          line-height: 1.6;
-          color: #4a4a4a;
-          max-width: 450px;
-        ">
-          Combining a Master's in Power Engineering (TUM) with hands-on R&D experience at E.ON. 
-          Specialising in renewable energy integration, grid technologies, and Engineering Management.
-        </p>
-      </div>
-      <div style="
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        gap: 0.5rem;
-        border-left: 1px solid #e5e7eb;
-        padding-left: 2rem;
-      ">
-        <p style="margin: 0; font-size: 0.9rem;"><strong>📍</strong> Munich, Germany</p>
-        <p style="margin: 0; font-size: 0.9rem;"><strong>🌍</strong> Open to Relocate</p>
-        <p style="margin: 0; font-size: 0.9rem;"><strong>🗣️</strong> English, Arabic, Turkish, German (B1)</p>
-        <p style="margin: 0; font-size: 0.9rem;">
-          <strong>📧</strong> <a href="mailto:hassan.hussein2424@gmail.com" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid #e5e7eb;">hassan.hussein2424@gmail.com</a>
-        </p>
-        <p style="margin: 0; font-size: 0.9rem;">
-          <strong>🔗</strong> <a href="https://linkedin.com/in/hassanhussein" style="color: #1a1a1a; text-decoration: none; border-bottom: 1px solid #e5e7eb;">LinkedIn</a>
-        </p>
-      </div>
-    </div>
-
-    <!-- Experience -->
-    <div id="experience" style="margin-bottom: 4rem;">
-      <div style="font-size: 0.85rem; color: #6b7280; letter-spacing: 0.1em; margin-bottom: 1.5rem;">
-        02 //
-      </div>
-      <h2 style="
-        font-size: 2rem;
-        font-weight: 600;
-        margin: 0 0 2rem 0;
-        letter-spacing: 0.02em;
-      ">
-        EXPERIENCE
-      </h2>
-
-      <!-- E.ON -->
-      <div style="
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 2rem;
-        padding: 1.5rem 0;
-        border-top: 1px solid #e5e7eb;
-      ">
-        <div>
-          <p style="font-weight: 600; margin: 0;">E.ON Group Innovation</p>
-          <p style="font-size: 0.85rem; color: #6b7280; margin: 0.25rem 0 0 0;">09/2023 – 07/2025</p>
-        </div>
-        <div>
-          <p style="font-weight: 600; margin: 0;">Working Student — R&D Management</p>
-          <ul style="
-            list-style: none;
-            padding: 0;
-            margin: 0.5rem 0 0 0;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            color: #4a4a4a;
-          ">
-            <li>• Deep-tech market research on grid digitalisation technologies.</li>
-            <li>• Redesigned end-to-end project pipeline, accelerating cycles by up to 3x.</li>
-            <li>• Developed value proposition and monetization strategy for battery health project.</li>
-            <li>• Prepared reports and presentations for senior management.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Sungrow -->
-      <div style="
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 2rem;
-        padding: 1.5rem 0;
-        border-top: 1px solid #e5e7eb;
-      ">
-        <div>
-          <p style="font-weight: 600; margin: 0;">Sungrow Europe</p>
-          <p style="font-size: 0.85rem; color: #6b7280; margin: 0.25rem 0 0 0;">07/2026 – 01/2027</p>
-        </div>
-        <div>
-          <p style="font-weight: 600; margin: 0;">Intern — Technical Training</p>
-          <ul style="
-            list-style: none;
-            padding: 0;
-            margin: 0.5rem 0 0 0;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            color: #4a4a4a;
-          ">
-            <li>• Supported service technical training for utility-scale ESS, PV, C&I products.</li>
-            <li>• Maintained European Knowledge Base with HQ materials.</li>
-            <li>• Developed training materials and supported CLCS certification.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Volunteer HR -->
-      <div style="
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 2rem;
-        padding: 1.5rem 0;
-        border-top: 1px solid #e5e7eb;
-      ">
-        <div>
-          <p style="font-weight: 600; margin: 0;">Deutsch-Arabischer Raum</p>
-          <p style="font-size: 0.85rem; color: #6b7280; margin: 0.25rem 0 0 0;">02/2026 – Present</p>
-        </div>
-        <div>
-          <p style="font-weight: 600; margin: 0;">Volunteer — HR Team Lead</p>
-          <ul style="
-            list-style: none;
-            padding: 0;
-            margin: 0.5rem 0 0 0;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            color: #4a4a4a;
-          ">
-            <li>• Lead HR operations for a 1,200+ member organization.</li>
-            <li>• Planned and executed large-scale events (400+ attendees).</li>
-            <li>• Improved volunteer onboarding and training processes.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- TUM Carbon Removal -->
-      <div style="
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 2rem;
-        padding: 1.5rem 0;
-        border-top: 1px solid #e5e7eb;
-      ">
-        <div>
-          <p style="font-weight: 600; margin: 0;">TUM Carbon Removal Initiative</p>
-          <p style="font-size: 0.85rem; color: #6b7280; margin: 0.25rem 0 0 0;">07/2023 – 03/2024</p>
-        </div>
-        <div>
-          <p style="font-weight: 600; margin: 0;">Volunteer — Process & Storage Teams</p>
-          <ul style="
-            list-style: none;
-            padding: 0;
-            margin: 0.5rem 0 0 0;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            color: #4a4a4a;
-          ">
-            <li>• Built and designed a carbon removal plant prototype.</li>
-            <li>• Applied air contractor and storage system for CO₂ conversion into dry ice.</li>
-            <li>• Presented at Festival der Zukunft 2023 (1E9 & Deutsches Museum).</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Education -->
-    <div id="education" style="margin-bottom: 4rem;">
-      <div style="font-size: 0.85rem; color: #6b7280; letter-spacing: 0.1em; margin-bottom: 1.5rem;">
-        03 //
-      </div>
-      <h2 style="
-        font-size: 2rem;
-        font-weight: 600;
-        margin: 0 0 2rem 0;
-        letter-spacing: 0.02em;
-      ">
-        EDUCATION
-      </h2>
-
-      <div style="
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 2rem;
-        padding: 1.5rem 0;
-        border-top: 1px solid #e5e7eb;
-      ">
-        <div>
-          <p style="font-weight: 600; margin: 0;">Technical University of Munich</p>
-          <p style="font-size: 0.85rem; color: #6b7280; margin: 0.25rem 0 0 0;">10/2022 – 09/2025</p>
-        </div>
-        <div>
-          <p style="font-weight: 600; margin: 0;">M.Sc. Power Engineering</p>
-          <ul style="
-            list-style: none;
-            padding: 0;
-            margin: 0.5rem 0 0 0;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            color: #4a4a4a;
-          ">
-            <li>• Master's Thesis: Thermal inertia in district heating as virtual energy storage.</li>
-            <li>• Specialization: Renewable & Thermal Energy, Energy Storage, High Voltage Technology.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div style="
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 2rem;
-        padding: 1.5rem 0;
-        border-top: 1px solid #e5e7eb;
-      ">
-        <div>
-          <p style="font-weight: 600; margin: 0;">Istanbul Bilgi University</p>
-          <p style="font-size: 0.85rem; color: #6b7280; margin: 0.25rem 0 0 0;">10/2018 – 08/2022</p>
-        </div>
-        <div>
-          <p style="font-weight: 600; margin: 0;">B.Sc. Energy Systems Engineering</p>
-          <ul style="
-            list-style: none;
-            padding: 0;
-            margin: 0.5rem 0 0 0;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            color: #4a4a4a;
-          ">
-            <li>• Best Senior Project Award: Waste heat recovery from shower wastewater.</li>
-            <li>• Minor in Business Administration.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div style="
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 2rem;
-        padding: 1.5rem 0;
-        border-top: 1px solid #e5e7eb;
-      ">
-        <div>
-          <p style="font-weight: 600; margin: 0;">Technical University of Denmark</p>
-          <p style="font-size: 0.85rem; color: #6b7280; margin: 0.25rem 0 0 0;">02/2025 – 06/2025</p>
-        </div>
-        <div>
-          <p style="font-weight: 600; margin: 0;">EuroteQ Exchange Program</p>
-          <ul style="
-            list-style: none;
-            padding: 0;
-            margin: 0.5rem 0 0 0;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            color: #4a4a4a;
-          ">
-            <li>• Entrepreneurship and Renewables in Electricity Markets.</li>
-            <li>• Exposure to strategic thinking and market dynamics.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- Skills -->
-    <div id="skills" style="margin-bottom: 4rem;">
-      <div style="font-size: 0.85rem; color: #6b7280; letter-spacing: 0.1em; margin-bottom: 1.5rem;">
-        04 //
-      </div>
-      <h2 style="
-        font-size: 2rem;
-        font-weight: 600;
-        margin: 0 0 2rem 0;
-        letter-spacing: 0.02em;
-      ">
-        SKILLS & TOOLS
-      </h2>
-
-      <div style="
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        padding: 1.5rem 0;
-        border-top: 1px solid #e5e7eb;
-      ">
-        <div>
-          <p style="font-weight: 600; margin: 0 0 0.5rem 0;">Programming & Data</p>
-          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.95rem; line-height: 1.8; color: #4a4a4a;">
-            <li>• Python (pandas, numpy, scikit-learn)</li>
-            <li>• SQL, MATLAB, Power BI</li>
-            <li>• LCA (brightway)</li>
-          </ul>
-        </div>
-        <div>
-          <p style="font-weight: 600; margin: 0 0 0.5rem 0;">Energy Modelling</p>
-          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.95rem; line-height: 1.8; color: #4a4a4a;">
-            <li>• PyPSA, TESPy, PVsyst</li>
-            <li>• Ansys Fluent (CFD), SolidWorks</li>
-            <li>• EN-ROADS</li>
-          </ul>
-        </div>
-      </div>
-
-      <div style="
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        padding: 1.5rem 0;
-        border-top: 1px solid #e5e7eb;
-      ">
-        <div>
-          <p style="font-weight: 600; margin: 0 0 0.5rem 0;">Project Management</p>
-          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.95rem; line-height: 1.8; color: #4a4a4a;">
-            <li>• Salesforce (CRM)</li>
-            <li>• Notion, Slack</li>
-            <li>• Microsoft Project</li>
-          </ul>
-        </div>
-        <div>
-          <p style="font-weight: 600; margin: 0 0 0.5rem 0;">Soft Skills</p>
-          <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.95rem; line-height: 1.8; color: #4a4a4a;">
-            <li>• R&D & Innovation Management</li>
-            <li>• Stakeholder Management</li>
-            <li>• Cross-functional Coordination</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- FAQ -->
-    <div id="faq" style="margin-bottom: 4rem;">
-      <div style="font-size: 0.85rem; color: #6b7280; letter-spacing: 0.1em; margin-bottom: 1.5rem;">
-        05 //
-      </div>
-      <h2 style="
-        font-size: 2rem;
-        font-weight: 600;
-        margin: 0 0 2rem 0;
-        letter-spacing: 0.02em;
-      ">
-        FAQ
-      </h2>
-
-      <div style="
-        padding: 1.5rem 0;
-        border-top: 1px solid #e5e7eb;
-      ">
-        <div style="
-          display: grid;
-          grid-template-columns: 1fr 2fr;
-          gap: 2rem;
-        ">
-          <p style="font-weight: 600; margin: 0;">What industries have you worked in?</p>
-          <p style="margin: 0; color: #4a4a4a; line-height: 1.6;">
-            Renewable energy, grid digitalisation, R&D management, industrial automation, and academic research.
-          </p>
-        </div>
-      </div>
-
-      <div style="
-        padding: 1.5rem 0;
-        border-top: 1px solid #e5e7eb;
-      ">
-        <div style="
-          display: grid;
-          grid-template-columns: 1fr 2fr;
-          gap: 2rem;
-        ">
-          <p style="font-weight: 600; margin: 0;">What is your core technical expertise?</p>
-          <p style="margin: 0; color: #4a4a4a; line-height: 1.6;">
-            Energy system modelling (PyPSA, TESPy), data analysis (Python, SQL), R&D project management, and techno-economic analysis.
-          </p>
-        </div>
-      </div>
-
-      <div style="
-        padding: 1.5rem 0;
-        border-top: 1px solid #e5e7eb;
-      ">
-        <div style="
-          display: grid;
-          grid-template-columns: 1fr 2fr;
-          gap: 2rem;
-        ">
-          <p style="font-weight: 600; margin: 0;">Are you available for freelance projects?</p>
-          <p style="margin: 0; color: #4a4a4a; line-height: 1.6;">
-            Yes! I'm open to freelance, consulting, and research collaborations. 
-            <a href="mailto:hassan.hussein2424@gmail.com" style="color: #1a1a1a;">hassan.hussein2424@gmail.com</a>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <div id="contact" style="
-      border-top: 1px solid #e5e7eb;
-      padding-top: 2rem;
+      My portfolio is under construction.
+    </p>
+    <p style="
+      font-size: 1.1rem;
+      color: #6b7280;
+      max-width: 500px;
+    ">
+      I'm working on something amazing. Check back soon!
+    </p>
+    <div style="
       margin-top: 2rem;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
       gap: 1rem;
-      font-size: 0.9rem;
-      color: #6b7280;
     ">
-      <span>© 2026 Hassan Hussein</span>
-      <span>
-        <a href="/impressum" style="color: #6b7280; text-decoration: none;">Imprint</a>
-        {' · '}
-        <a href="/datenschutz" style="color: #6b7280; text-decoration: none;">Privacy</a>
-        {' · '}
-        <a href="/disclaimer" style="color: #6b7280; text-decoration: none;">Disclaimer</a>
-      </span>
+      <a href="mailto:hassan.hussein2424@gmail.com" style="
+        background: #2563eb;
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 500;
+      ">
+        📧 Contact Me
+      </a>
     </div>
+    <p style="
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #9ca3af;
+    ">
+      © 2026 Hassan Hussein
+    </p>
   </div>
 </Layout>
